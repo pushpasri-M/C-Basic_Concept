@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+
+    // class is created and then used in other cs file 
+    // Mainly to increase code usability
     class Message
     {
         public static void Hello()
