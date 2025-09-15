@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstraction.cs" />
+    <Compile Include="CustomException.cs" />
+    <Compile Include="Encapsulation.cs" />
+    <Compile Include="ExceptionHandle.cs" />
+    <Compile Include="Inheritance.cs" />
+    <Compile Include="Interface.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
