@@ -44,11 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstraction.cs" />
+    <Compile Include="ArrayListe.cs" />
     <Compile Include="CustomException.cs" />
     <Compile Include="Encapsulation.cs" />
     <Compile Include="ExceptionHandle.cs" />
+    <Compile Include="HashTableNG.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="Interface.cs" />
+    <Compile Include="ListG.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
