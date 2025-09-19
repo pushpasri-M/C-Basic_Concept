@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
@@ -118,7 +119,7 @@ namespace ConsoleApp1
             Console.WriteLine(koo(10));
             Console.ReadKey();
 
-            */
+            
 
             // LINQ topic
             List<genre> obj = new List<genre>
@@ -136,14 +137,51 @@ namespace ConsoleApp1
             //    Console.WriteLine(n);
             //}
 
-            var gen = obj.Where(g => g.place == "india");
-            foreach(var g in gen)
+            //var gen = obj.Where(g => g.place == "india");
+            //foreach(var g in gen)
+            //{
+            //   Console.WriteLine(g.Title);
+            //}
+
+            int[] scores = { 97, 92, 81, 60 };
+
+            // Define the query expression.
+            IEnumerable<int> scoreQuery =
+                from score in scores
+                where score > 80
+                select score;
+
+            // Execute the query.
+            foreach (var i in scoreQuery)
             {
-                Console.WriteLine(g.Title);
+                Console.Write(i + " ");
             }
+            
+
+
+
+            //File Handling-Create file
+            string path = "sample.txt";
+            File.WriteAllText(path, "Hello, this is a test file!");//done using write
+            File.AppendAllText(path, "\n This is second line in the file");//append content
+            Console.WriteLine(File.ReadAllText(path));//read the content of the file
+
+            */
+            //this is done using the StreamWriter
+            using (StreamWriter sw = new StreamWriter("Sass.txt"))//the file created using
+            {
+                sw.WriteLine("Line 1");
+                sw.WriteLine("Line 2");
+
+            }
+            StreamReader sr = new StreamReader("Sass.txt");
+            string line;
+            while ((line = sr.ReadLine()) != null)  // read line by line
+            {
+                Console.WriteLine(line);
+            }
+
             Console.ReadLine();
-
-
 
         }
         }
