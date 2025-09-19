@@ -46,8 +46,10 @@
     <Compile Include="Abstraction.cs" />
     <Compile Include="ArrayListe.cs" />
     <Compile Include="CustomException.cs" />
+    <Compile Include="DictionaryG.cs" />
     <Compile Include="Encapsulation.cs" />
     <Compile Include="ExceptionHandle.cs" />
+    <Compile Include="genre.cs" />
     <Compile Include="HashTableNG.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="Interface.cs" />

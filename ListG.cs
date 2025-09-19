@@ -8,15 +8,9 @@ namespace ConsoleApp1
 {
     class ListG
     {
-        public void ListOperate()
+        public void rent<T>(List<T> numbers)
         {
-            List<int> ls = new List<int>();
-            ls.Add(2);
-            ls.Add(767);
-            ls.Add(45);
-            ls.Remove(45);
-            ls.RemoveAt(0);
-            foreach(int i in ls){
+            foreach(var i in numbers){
                 Console.WriteLine(i);
             }
 
