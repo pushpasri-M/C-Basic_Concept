@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
+using ConsoleApp1.Search;
+using ConsoleApp1.DataStructure;
+using ConsoleApp1.sort;
 
 namespace ConsoleApp1
 {
@@ -166,7 +169,7 @@ namespace ConsoleApp1
             File.AppendAllText(path, "\n This is second line in the file");//append content
             Console.WriteLine(File.ReadAllText(path));//read the content of the file
 
-            */
+            
             //this is done using the StreamWriter
             using (StreamWriter sw = new StreamWriter("Sass.txt"))//the file created using
             {
@@ -180,8 +183,96 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(line);
             }
+            
 
+
+            //Delegate 
+            Delegate obj = new Delegate();
+            //Delegate
+            Deleg obj1 = new Deleg(obj.Reen);//Delegate refers to passing method as parameter 
+            Deleg obj2 = new Deleg(obj.Yeen);//for accesing deleg the parameter and the return type should be same
+            obj1.Invoke("string");
+            obj2.Invoke("******");
+            Deleg multiDeleg = obj1 + obj2;// Accessing more then one method with the help of delegate is called as Multicast Delecate....same parameter string is passed to the both delegte method at a time
+            multiDeleg("uhsjhsh");
             Console.ReadLine();
+            
+
+           
+            //Array
+            Array rr = new Array();
+            rr.AddArray();
+            rr.AddFirst(9);
+            Console.ReadKey();
+            
+
+
+            //Linear Search
+            LinearSearch rr = new LinearSearch();
+            Console.WriteLine(rr.Linear(3));
+            Console.ReadKey();
+            
+
+            //Linked List
+            LinkedListExample.LinkedLista ts = new LinkedListExample.LinkedLista();
+            ts.ADD(33);
+            ts.ADD(34);
+            ts.ADD(36);
+            ts.ADD(35);
+            ts.Display();
+            Console.ReadKey();
+            
+
+
+            //Stack
+            Stack re = new Stack();
+            Stack<int> orj = new Stack<int>();
+            orj.Push(45);
+            orj.Push(75);
+            orj.Push(25);
+            orj.Push(35);
+            orj.Pop();
+
+            re.Display<int>(orj);
+
+            
+
+
+            //Queue
+            Queue queue = new Queue();
+            Queue<int> vs = new Queue<int>();
+            vs.Enqueue(4);
+            vs.Enqueue(5);
+            vs.Enqueue(6);
+            vs.Enqueue(7);
+            vs.Dequeue();
+            queue.Display(vs);
+
+
+            //Slection Sort
+            Selection obj = new Selection();
+            obj.SelectionSort();
+
+            
+            //Bubble Sort
+            BubbleSort n = new BubbleSort();
+            n.BubbleSor();
+
+
+            */
+
+            //Graph
+            Graph graph = new Graph();
+            graph.AddEdge(1, 2);
+            graph.AddEdge(1, 3);
+            graph.AddEdge(2, 4);
+            graph.AddEdge(3, 4);
+            graph.AddEdge(3, 5);
+            Console.WriteLine("Adjacency List of Graph:");
+            graph.PrintGraph();
+
+
+            Console.ReadKey();
 
         }
         }
