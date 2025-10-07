@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ConsoleApp1.Search;
 using ConsoleApp1.DataStructure;
 using ConsoleApp1.sort;
+using ConsoleApp1.LinqRE;
 
 namespace ConsoleApp1
 {
@@ -259,7 +260,7 @@ namespace ConsoleApp1
             n.BubbleSor();
 
 
-            */
+            
 
             //Graph
             Graph graph = new Graph();
@@ -270,6 +271,14 @@ namespace ConsoleApp1
             graph.AddEdge(3, 5);
             Console.WriteLine("Adjacency List of Graph:");
             graph.PrintGraph();
+            */
+
+
+
+            Linqer ne = new Linqer();
+            ne.Selecte();
+            ne.grouping();
+            ne.Aggregate();
 
 
             Console.ReadKey();
