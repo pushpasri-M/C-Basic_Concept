@@ -23,7 +23,7 @@ namespace ConsoleApp1
             }
             catch(Exception e)
             {
-                Console.WriteLine("You cause error");
+                Console.WriteLine("You cause error");//a try block program can use more then one catch
             }
             finally
             {
