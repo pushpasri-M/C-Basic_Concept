@@ -279,7 +279,8 @@ namespace ConsoleApp1
             ne.Selecte();
             ne.grouping();
             ne.Aggregate();
-
+            ne.Sort();
+            ne.Compare();
 
             Console.ReadKey();
 

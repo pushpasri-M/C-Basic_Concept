@@ -11,7 +11,7 @@ namespace ConsoleApp1.sort
         public void Insertions()
         {
             int[] n = { 7, 5, 6, 1, 2, 3, 9 };
-            int temp;
+          
 
         }
     }

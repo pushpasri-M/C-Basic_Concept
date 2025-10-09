@@ -76,6 +76,7 @@
     <Compile Include="Interface.cs" />
     <Compile Include="DataStructure\ListG.cs" />
     <Compile Include="LinqRE\data.cs" />
+    <Compile Include="LinqRE\Department.cs" />
     <Compile Include="LinqRE\Linqer.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Program.cs" />

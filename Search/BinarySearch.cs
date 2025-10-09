@@ -8,7 +8,8 @@ namespace ConsoleApp1.Search
 {
     class BinarySearch
     {
-        int[] vs = { 5,57,4,53,2,3,1,4};
+       private readonly int[] vs = { 5,57,4,53,2,3,1,4};
+
         
     }
 }

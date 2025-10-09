@@ -9,7 +9,7 @@ namespace ConsoleApp1.DataStructure
     class Graph
     {
         // Dictionary to store adjacency list
-        private Dictionary<int, List<int>> adj = new Dictionary<int, List<int>>();
+        private readonly Dictionary<int, List<int>> adj = new Dictionary<int, List<int>>();
 
         // Add an edge between u and v (undirected)
         public void AddEdge(int u, int v)
