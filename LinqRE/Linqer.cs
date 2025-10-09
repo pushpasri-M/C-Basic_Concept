@@ -29,6 +29,8 @@ namespace ConsoleApp1.LinqRE
             }
         }
 
+       
+
 
         public void grouping()
         {
@@ -47,6 +49,12 @@ namespace ConsoleApp1.LinqRE
         {
             var max_saal = ne.Max(g => g.salary);
             Console.WriteLine("\n"+max_saal);
+            var min_saal = ne.Min(g => g.salary);
+            Console.WriteLine(min_saal);
+            var Average = ne.Average(g => g.salary);
+            var Count = ne.Count;
+            Console.WriteLine($"Average of {Count} people's  Salary in Office is {Average}");
+
         }
 
         public void Sort()
@@ -55,6 +63,11 @@ namespace ConsoleApp1.LinqRE
             foreach(var sr in Sorted)
             {
                 Console.WriteLine(sr.Empname+"-----"+sr.salary);
+            }
+            var Sorte = ne.OrderByDescending(g => g.salary);
+            foreach (var sr in Sorte)
+            {
+                Console.WriteLine(sr.Empname + "-----" + sr.salary);
             }
         }
 

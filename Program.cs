@@ -85,7 +85,7 @@ namespace ConsoleApp1
             obj.rent<int>(ls);
             Console.ReadKey();
             
-
+            
 
             //Dictionary
             DictionaryG ls = new DictionaryG();
@@ -223,7 +223,7 @@ namespace ConsoleApp1
             ts.Display();
             Console.ReadKey();
             
-
+            
 
             //Stack
             Stack re = new Stack();
@@ -274,13 +274,13 @@ namespace ConsoleApp1
             */
 
 
-
+            //LINQ
             Linqer ne = new Linqer();
-            ne.Selecte();
-            ne.grouping();
-            ne.Aggregate();
-            ne.Sort();
-            ne.Compare();
+            ne.Selecte();//Where is used for filtering
+            ne.grouping();// grouping the content to maake it look easier to access
+            ne.Aggregate();//Aggregate means making bundle the value to single 
+            ne.Sort();//sorting value by orderBy and OrderByDecending
+            ne.Compare();//Compare the 2 different list and make new similar to that of Join in SQL
 
             Console.ReadKey();
 
