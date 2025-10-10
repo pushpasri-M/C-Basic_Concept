@@ -29,9 +29,6 @@ namespace ConsoleApp1.LinqRE
             }
         }
 
-       
-
-
         public void grouping()
         {
             var grouped = ne.GroupBy(g => g.depart);
@@ -86,7 +83,8 @@ namespace ConsoleApp1.LinqRE
                        };
             foreach(var re in Comp)
             {
-                Console.WriteLine(re.EmployeeID + " " + re.EmployeeName + " " + re.EmployeeDepartment + " " + re.EmployeeDepID);
+                Console.WriteLine(re.EmployeeID + " " + re.EmployeeName 
+                    + " " + re.EmployeeDepartment + " " + re.EmployeeDepID);
             }
         }
         

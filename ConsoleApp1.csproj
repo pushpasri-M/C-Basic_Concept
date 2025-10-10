@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstraction.cs" />
+    <Compile Include="Ascyn&amp;Thread\Asychronous.cs" />
     <Compile Include="DataStructure\Array.cs" />
     <Compile Include="Genrics\ArrayListe.cs" />
     <Compile Include="CustomException.cs" />

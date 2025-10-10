@@ -8,6 +8,7 @@ using ConsoleApp1.Search;
 using ConsoleApp1.DataStructure;
 using ConsoleApp1.sort;
 using ConsoleApp1.LinqRE;
+using ConsoleApp1.Ascyn_Thread;
 
 namespace ConsoleApp1
 {
@@ -271,7 +272,7 @@ namespace ConsoleApp1
             graph.AddEdge(3, 5);
             Console.WriteLine("Adjacency List of Graph:");
             graph.PrintGraph();
-            */
+            
 
 
             //LINQ
@@ -281,6 +282,16 @@ namespace ConsoleApp1
             ne.Aggregate();//Aggregate means making bundle the value to single 
             ne.Sort();//sorting value by orderBy and OrderByDecending
             ne.Compare();//Compare the 2 different list and make new similar to that of Join in SQL
+
+            */
+
+
+
+            //Asynchronous programming
+            Asychronous obj = new Asychronous();
+            obj.Example();
+            var num=obj.GetDataAsyn();
+            Console.WriteLine(num.Result);
 
             Console.ReadKey();
 
