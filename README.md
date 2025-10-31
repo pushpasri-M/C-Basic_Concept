@@ -70,7 +70,12 @@ By exploring this repository, you’ll be able to:
 - Learn best practices for **code structure and readability**.
 
 ---
+## 📊 Presentation
 
+You can view or download the detailed presentation here:  
+[📥 Download C# Basics Presentation](https://github.com/pushpasri-M/C-Basic_Concept/blob/master/Overview.pptx)
+
+---
 ## 💡 Future Enhancements
 
 - Add beginner to advanced **mini projects** using C#.  
